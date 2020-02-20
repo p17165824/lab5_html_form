@@ -21,3 +21,8 @@ function buildDate(d){
 
  let today = new Date();
  buildDate(today);
+
+/*function setColor(p){
+  const p = new color()
+}
+*/
