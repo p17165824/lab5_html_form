@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <h1 id="date">HTML5 forms: </h1>
+<body>
+  <form id="the-form">
+
+    <fieldset id="someId">
+      <label for="datePicker"> </label>
+      <input type="date" id="datePicker"></input>
+    </fieldset>
+
+      <fieldset>
+        <label for="colour">Colour</label>
+      <input type="color" value="#006060" id="colour">
+      </fieldset>
+
+      <fieldset>
+
+      <label for="range">Width</label>
+      <input type="range" min="0" max="100" id="range">
+      <label for="range2">Padding</label>
+      <input type="range" min="0" max="40" value="0" id="range2">
+        </fieldset>
+  </form>
+  <p id="the-value" class="value">50</p>
+  <script src="scripts.js"></script>
+</body>
+</html>
