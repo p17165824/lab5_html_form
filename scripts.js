@@ -22,7 +22,25 @@ function buildDate(d){
  let today = new Date();
  buildDate(today);
 
-/*function setColor(p){
-  const p = new color()
+
+ const theParagraph = document.getElementById("the-value");
+ const getColour = document.getElementById("colour");
+
+function setColor(){
+  theParagraph.style.backgroundColor = getColour.value;
+
 }
-*/
+setColor();
+
+getColour.addEventListener('change', setColor);
+
+ const getRange = document.getElementById("range");
+
+ function rangeAction(){
+   theParagraph.innerText = getRange.value;
+   theParagraph.style.width = `${getRange.value}%`;
+
+ }
+ getRange.addEventListener('input', rangeAction);
+
+ 
